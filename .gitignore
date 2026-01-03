@@ -207,6 +207,9 @@ marimo/_lsp/
 __marimo__/
 
 .jarvis/events.jsonl
-Regresion\DecisionTreeRegressor.pkl
-Regresion\RandomForestRegressor.pkl
-Regresion\LinearRegressor.pkl
+
+# ML / model artifacts
+*.pkl
+*.joblib
+*.pt
+*.pth
