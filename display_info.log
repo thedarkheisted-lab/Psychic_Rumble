@@ -1,0 +1,9 @@
+INFO:root:Ran with args:('John', 25) and kwargs:{}
+INFO:root:Ran with args:('John', 25) and kwargs:{}
+INFO:root:Ran with args:('Vishrut', 22) and kwargs:{}
+INFO:root:Ran with args:('Vishrut', 1004239, 5000000) and kwargs:{}
+INFO:root:Ran display_info with arguments: ('Vishrut', 22) 
+INFO:root:Ran display_info with arguments: ('Vishrut', 22). Time required: 1.000654697418213
+INFO:root:Ran with args:('Vishrut', 22) and kwargs:{}
+INFO:root:Ran with args:('Vishrut', 22) and kwargs:{}
+INFO:root:Ran with args:('Hal', 23) and kwargs:{}

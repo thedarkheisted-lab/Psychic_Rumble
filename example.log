@@ -1,0 +1,4 @@
+INFO:root:Running "add" with arguments (3, 5)
+INFO:root:Running "add" with arguments (6, 7)
+INFO:root:Running "subtract" with arguments (7, 4)
+INFO:root:Running "subtract" with arguments (9, 5)
