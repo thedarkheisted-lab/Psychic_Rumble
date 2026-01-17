@@ -1,6 +1,6 @@
 class Account:
     def __init__(self, name, number, amount):
-        assert amount>=0, "Balance cannot be in negative"
+        assert amount >= 0, "Balance cannot be in negative"
 
         self.name = name
         self.__number = number
@@ -13,13 +13,13 @@ class Account:
     def deposit(self, deposit_amount):
         self.amount = self.amount + deposit_amount
     
-    def withdraw(self,withdraw_amount):
-        if withdraw_amount>self.amount:
+    def withdraw(self, withdraw_amount):
+        if withdraw_amount > self.amount:
             raise ValueError("Insufficient Funds")
         self.amount = self.amount - withdraw_amount
   
     def transfer(self, target_account, amount):
-        if amount<=0:
+        if amount <= 0:
             raise ValueError("Transfer amount not valid")
         if amount > self.amount:
             raise ValueError("Insufficient Funds")
@@ -30,7 +30,7 @@ class Account:
         target_account.deposit(amount)
 
 
-account1 = Account("John Smith", 1004005, 5000)
-account2 = Account("John Doe", 1003006, 10000)
-
-print(account1.amount)
+if __name__ == "__main__":
+    account1 = Account("John Smith", 1004005, 5000)
+    account2 = Account("John Doe", 1003006, 10000)
+    print(account1.amount)
