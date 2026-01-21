@@ -29,6 +29,21 @@ class Account:
         self.withdraw(amount)
         target_account.deposit(amount)
 
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "number": self.number,
+            "amount": self.amount,
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        return cls(
+            name=data["name"],
+            number=data["number"],
+            amount=data["amount"],
+        )
+
 
 if __name__ == "__main__":
     account1 = Account("John Smith", 1004005, 5000)

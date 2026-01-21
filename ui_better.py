@@ -7,6 +7,8 @@ import json
 import threading
 from datetime import datetime
 import tkinter as tk
+import subprocess
+import sys
 from tkinter import ttk, messagebox, simpledialog
 
 import requests  
@@ -247,6 +249,9 @@ class ChatUI(tk.Tk):
         self.stream_var = tk.BooleanVar(value=True)
         ttk.Checkbutton(top, text="Stream", variable=self.stream_var).pack(side="left")
 
+        self.bank_btn = ttk.Button(top, text="Bank UI", command=self._open_bank_ui)
+        self.bank_btn.pack(side="left", padx=(10, 16))
+
         self.clear_btn = ttk.Button(top, text="Clear", command=self.clear_chat)
         self.clear_btn.pack(side="right")
 
@@ -333,6 +338,13 @@ class ChatUI(tk.Tk):
     def _set_status(self, msg: str):
         self.status_var.set(msg)
         self.update_idletasks()
+
+    def _open_bank_ui(self):
+        try:
+            subprocess.Popen([sys.executable, "run_bank.py"])
+            self._set_status("Opened Bank UI.")
+        except Exception as exc:
+            self._set_status(f"Failed to open Bank UI: {exc}")
 
     def clear_chat(self):
         self.chat.configure(state="normal")

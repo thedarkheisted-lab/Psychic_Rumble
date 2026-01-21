@@ -42,6 +42,8 @@ LOG_LOCK = threading.Lock()
 MAX_LOG_BYTES = 500_000_000  # ~500 MB simple rotation threshold
 MAX_LOG_CHARS = 80000
 _accounts: Dict[int, Account] = {}
+ACCOUNTS_DIR = Path.cwd() / "bank_accounts"
+ACCOUNTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 class KV(BaseModel):
@@ -243,19 +245,47 @@ def build_context_system_msg() -> dict :
 def _final_messages(req: ChatRequest) -> list[dict]:
     return [build_context_system_msg()] + [m.model_dump() for m in req.messages]
 
+def _account_path(number: int) -> Path:
+    return ACCOUNTS_DIR / f"{number}.json"
+
+def _save_account(account: Account) -> None:
+    path = _account_path(account.number)
+    path.write_text(json.dumps(account.to_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
+
+def _load_account(number: int) -> Account | None:
+    path = _account_path(number)
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return Account.from_dict(data)
+
+def _load_accounts_from_disk() -> None:
+    for file_path in ACCOUNTS_DIR.glob("*.json"):
+        try:
+            data = json.loads(file_path.read_text(encoding="utf-8"))
+            account = Account.from_dict(data)
+            _accounts[account.number] = account
+        except (OSError, json.JSONDecodeError, KeyError, ValueError):
+            continue
+
 @my_logger
 def _create_account(name: str, number: int, amount: float) -> Account:
-    if number in _accounts:
+    if number in _accounts or _account_path(number).exists():
         raise ValueError("Account already exists")
     account = Account(name, number, amount)
     _accounts[number] = account
+    _save_account(account)
     return account
 
 @my_logger
 def _get_account(number: int) -> Account:
     account = _accounts.get(number)
     if not account:
-        raise KeyError("Account not found")
+        account = _load_account(number)
+        if account:
+            _accounts[number] = account
+    if not account:
+        raise KeyError(f"{number} does not exist")
     return account
 
 @my_logger
@@ -265,10 +295,22 @@ def _deposit(account: Account, amount: float) -> None:
 @my_logger
 def _withdraw(account: Account, amount: float) -> None:
     account.withdraw(amount)
+    _save_account(account)
 
 @my_logger
 def _transfer(source: Account, target: Account, amount: float) -> None:
     source.transfer(target, amount)
+    _save_account(source)
+    _save_account(target)
+
+def _ensure_target_account(number: int) -> Account:
+    try:
+        return _get_account(number)
+    except KeyError:
+        account = Account(name=f"User {number}", number=number, amount=0)
+        _accounts[number] = account
+        _save_account(account)
+        return account
 
 @app.get("/health")
 async def health():
@@ -317,7 +359,9 @@ def withdraw(number: int, payload: AmountRequest):
 def transfer(payload: TransferRequest):
     try:
         source = _get_account(payload.source_number)
-        target = _get_account(payload.target_number)
+        if payload.amount > source.amount:
+            raise ValueError(f"{payload.source_number} does not have enough funds")
+        target = _ensure_target_account(payload.target_number)
         _transfer(source, target, payload.amount)
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
@@ -327,6 +371,8 @@ def transfer(payload: TransferRequest):
         "source": {"number": source.number, "amount": source.amount},
         "target": {"number": target.number, "amount": target.amount},
     }
+
+_load_accounts_from_disk()
 
 @app.post("/chat")
 async def chat_once(req: ChatRequest):
