@@ -24,10 +24,12 @@ import asyncio
 
 from projects.Bank import Account
 from projects.Functionlogger import my_logger
+from projects.WarRuntime import WarRuntime
 
 app = FastAPI(title="Better Backend using codex", version = "1.0")
 
 DEFAULT_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:7b-instruct")  # change to qwen2.5:72b, mistral-nemo:12b, etc.
+war_runtime = WarRuntime()
 
 # ---- Local storage config ----
 APP_DIR = Path.cwd() / ".jarvis"           # e.g., C:\Users\<you>\.jarvis
@@ -88,6 +90,12 @@ class TransferRequest(BaseModel):
 class AmountRequest(BaseModel):
     amount: float = Field(..., gt=0)
 
+class WarIntervention(BaseModel):
+    god: str
+    effect: str
+    target: str
+    magnitude: float = 0.3
+
 #app = FastAPI(title="Ollama Chat Backend", version="1.0")
 
 # CORS for local UI or a future web front-end
@@ -98,6 +106,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.on_event("startup")
+def _start_war_runtime():
+    war_runtime.start()
 
 def _timezone_name() -> str | None:
     # Primary: from aware datetime
@@ -291,6 +303,7 @@ def _get_account(number: int) -> Account:
 @my_logger
 def _deposit(account: Account, amount: float) -> None:
     account.deposit(amount)
+    _save_account(account)
 
 @my_logger
 def _withdraw(account: Account, amount: float) -> None:
@@ -506,6 +519,31 @@ async def store_append(note: AppendNote):
         with STORE_LOG.open("a", encoding="utf-8") as f:
             f.write(line)
     return {"ok": True, "appended_to": str(STORE_LOG)}
+
+@app.post("/war/start")
+def war_start():
+    war_runtime.start()
+    return {"ok": True, "running": war_runtime.running}
+
+@app.post("/war/stop")
+def war_stop():
+    war_runtime.stop()
+    return {"ok": True, "running": war_runtime.running}
+
+@app.get("/war/status")
+def war_status():
+    return {"running": war_runtime.running}
+
+@app.post("/war/intervene")
+def war_intervene(cmd: WarIntervention):
+    if not war_runtime.running:
+        raise HTTPException(status_code=400, detail="War is not running")
+    war_runtime.command_queue.put(cmd.model_dump())
+    return {"ok": True}
+
+@app.get("/war/events")
+def war_events(limit: int = 50):
+    return {"events": war_runtime.get_events(limit)}
 
 
 async def _stream_generator(req: ChatRequest) -> AsyncGenerator[bytes, None]:

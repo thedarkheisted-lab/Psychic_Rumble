@@ -5,6 +5,8 @@
 import re
 import json
 import threading
+import subprocess
+import sys
 from datetime import datetime
 import tkinter as tk
 import subprocess
@@ -285,6 +287,7 @@ class ChatUI(tk.Tk):
 
         # Health check
         self.after(400, self._check_backend)
+        self.after(800, self._poll_war_events)
 
     # ---- UI Styling ----
     def _setup_styles(self):
@@ -364,6 +367,16 @@ class ChatUI(tk.Tk):
                 self._set_status("Backend not responding.")
         except Exception:
             self._set_status("Backend offline. Start backend.py")
+
+    def _poll_war_events(self):
+        try:
+            r = requests.get(f"{BACKEND_URL}/war/events", timeout=1)
+            if r.ok:
+                for ev in r.json().get("events", []):
+                    self._append_meta(ev)
+        except Exception:
+            pass
+        self.after(800, self._poll_war_events)
 
     def _on_send_ctrl_enter(self, *_):
         self.send_message()
@@ -532,6 +545,43 @@ class ChatUI(tk.Tk):
         self._append_bubble(user_text, who="user")
 
         if self._try_handle_bank_intent(user_text):
+            return
+
+        lowered_text = user_text.strip().lower()
+        if lowered_text.startswith("start the war"):
+            try:
+                requests.post(f"{BACKEND_URL}/war/start", timeout=3).raise_for_status()
+                self._append_meta("The war has begun.")
+            except Exception as exc:
+                self._append_meta(f"War start failed: {exc}")
+            return
+
+        if lowered_text.startswith("stop the war"):
+            try:
+                requests.post(f"{BACKEND_URL}/war/stop", timeout=3).raise_for_status()
+                self._append_meta("The war has ended.")
+            except Exception as exc:
+                self._append_meta(f"War stop failed: {exc}")
+            return
+
+        m = re.match(r"(shiva|brahma|vishnu)\s+(curse|bless)\s+(.+)", lowered_text)
+        if m:
+            god, action, target = m.groups()
+            effect = "decay" if action == "curse" else "heal"
+            try:
+                requests.post(
+                    f"{BACKEND_URL}/war/intervene",
+                    json={
+                        "god": god.capitalize(),
+                        "effect": effect,
+                        "target": target.title(),
+                        "magnitude": 0.3,
+                    },
+                    timeout=3,
+                ).raise_for_status()
+                self._append_meta(f"{god.capitalize()} hears your call.")
+            except Exception as exc:
+                self._append_meta(f"Intervention failed: {exc}")
             return
 
         # ---- Slash commands (local ops) ----
