@@ -1,0 +1,1323 @@
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+Entity2: Entity2 takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Arthur 2.0: Arthur 2.0 takes 15.7 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 15.7 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling Intern Greg's magic channels!
+Intern Greg: Nervously attempting heavy_attack...
+Intern Greg: Intern Greg's heavy attack missed Arthur 2.0!
+Brahma finds no mortal worthy of aid.
+Entity2: Entity2 takes 4.1 damage (blocked 8.0)
+Shiva inflicts decay on Entity2: -12.1 HP (Cost: 0.3 energy)
+Vishnu grants mana to High Priest Tenzin: +9.6 MP (Cost: 0.5 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     84.6 |     45 |    100.0
+Entity2         |     78.9 |    100.0 |     45 |     97.7
+Arthur 2.0      |     94.3 |      0.0 |      0 |    120.0
+Intern Greg     |    120.0 |     80.0 |     47 |     80.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+Arthur 2.0: Arthur 2.0 takes 18.5 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 18.5 actual damage.
+Entity2: Entity2's normal attack missed Arthur 2.0!
+Intern Greg: Intern Greg takes 25.9 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Heavy Attack for 25.9 actual damage.
+Intern Greg: Forgot what they were doing. Takes no action.
+Brahma heals Entity2 for 21.1 HP. (Cost: 2.1 energy)
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     84.6 |     40 |     97.1
+Entity2         |    100.1 |    100.0 |     43 |     97.0
+Arthur 2.0      |     75.8 |      0.0 |     -7 |    110.5
+Intern Greg     |     94.1 |     80.0 |     47 |     85.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Arthur 2.0: Arthur 2.0 takes 35.0 damage (blocked 10.0)
+Entity2: Entity2 used Magic Attack for 35.0 actual damage.
+Arthur 2.0: Arthur 2.0's heavy attack missed Entity2!
+Intern Greg: Nervously attempting magic_attack...
+Entity2: Entity2 takes 37.0 damage (blocked 8.0)
+Intern Greg: Intern Greg used Magic Attack for 37.0 actual damage.
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     59.6 |     35 |    100.0
+Entity2         |     63.1 |     75.0 |     38 |    100.0
+Arthur 2.0      |     40.8 |      0.0 |    -10 |     98.2
+Intern Greg     |     57.1 |     55.0 |     42 |     85.0
+======================================================================
+
+
+-------------------- Turn 4 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+Arthur 2.0: Arthur 2.0 takes 19.9 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 19.9 actual damage.
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+Entity2: Entity2 used Magic Attack for 37.0 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 36.0 damage (blocked 8.0)
+Arthur 2.0 activates Overdrive! Unleashes 36.0 damage using excess heat.
+Intern Greg: Intern Greg rests and recovers 24.6 stamina and 7.5 mana.
+
+======================================================================
+Turn 4 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     84.0 |     64.6 |     30 |     95.6
+Entity2         |     63.1 |     55.0 |     33 |    100.0
+Arthur 2.0      |     20.9 |      0.0 |    -10 |    106.6
+Intern Greg     |     20.1 |     62.5 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 5 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Arthur 2.0: Arthur 2.0 takes 35.0 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 35.0 actual damage.
+Intern Greg: Intern Greg takes 15.7 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 15.7 actual damage.
+Intern Greg: Intern Greg rests and recovers 16.2 stamina and 8.4 mana.
+High Priest Tenzin: High Priest Tenzin takes 5.6 damage (blocked 8.0)
+Shiva inflicts decay on High Priest Tenzin: -13.6 HP (Cost: 0.3 energy)
+Vishnu heals Intern Greg for 14.3 health. (Cost: 0.7 energy)
+
+======================================================================
+Turn 5 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     78.4 |     34.6 |     25 |    100.0
+Entity2         |     63.1 |     50.0 |     28 |     98.9
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |     18.7 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 6 --------------------
+
+
+*** Cosmic Event: Mystic Winds - Evasive winds aid dodging—accuracy and evasion are slightly improved. ***
+High Priest Tenzin: High Priest Tenzin's magic attack missed Intern Greg!
+Intern Greg: Intern Greg takes 30.7 damage (blocked 8.0)
+Entity2: Entity2 used Heavy Attack for 30.7 actual damage.
+Brahma heals Entity2 for 17.7 HP. (Cost: 1.8 energy)
+
+======================================================================
+Turn 6 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     78.4 |      9.6 |     21 |    100.0
+Entity2         |     80.7 |     50.0 |     21 |     86.3
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 7 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+High Priest Tenzin: High Priest Tenzin uses a mana potion and recovers 25 mana.
+High Priest Tenzin: High Priest Tenzin takes 10.8 damage (blocked 8.0)
+Entity2: Entity2 used Quick Attack for 10.8 actual damage.
+Vishnu grants mana to High Priest Tenzin: +6.1 MP (Cost: 0.3 energy)
+
+======================================================================
+Turn 7 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     67.6 |     40.7 |     21 |    100.0
+Entity2         |     80.7 |     50.0 |     18 |     88.3
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 8 --------------------
+
+
+*** Cosmic Event: Mystic Winds - Evasive winds aid dodging—accuracy and evasion are slightly improved. ***
+Entity2: Entity2 takes 12.7 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 12.7 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 15.1 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 15.1 actual damage.
+
+======================================================================
+Turn 8 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     52.5 |     40.7 |     16 |     99.1
+Entity2         |     68.1 |     50.0 |     13 |     87.9
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 9 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+Entity2: Entity2 takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Entity2: Entity2 uses a health potion and heals 30 HP.
+Brahma heals High Priest Tenzin for 18.2 HP. (Cost: 1.8 energy)
+High Priest Tenzin: High Priest Tenzin takes 10.0 damage (blocked 8.0)
+Shiva inflicts decay on High Priest Tenzin: -18.0 HP (Cost: 0.4 energy)
+
+======================================================================
+Turn 9 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     60.7 |     20.7 |     11 |    100.0
+Entity2         |     61.1 |     55.0 |     13 |     96.8
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 10 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+High Priest Tenzin: High Priest Tenzin uses a mana potion and recovers 25 mana.
+High Priest Tenzin: High Priest Tenzin takes 37.0 damage (blocked 8.0)
+Entity2: Entity2 used Magic Attack for 37.0 actual damage.
+
+======================================================================
+Turn 10 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     23.7 |     40.7 |     11 |    100.0
+Entity2         |     61.1 |     25.0 |      8 |    100.0
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 11 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+High Priest Tenzin: High Priest Tenzin uses a health potion and heals 30 HP.
+Entity2: Entity2 uses a mana potion and recovers 25 mana.
+Brahma heals High Priest Tenzin for 15.6 HP. (Cost: 1.6 energy)
+Entity2: Entity2 takes 10.7 damage (blocked 8.0)
+Shiva inflicts decay on Entity2: -18.7 HP (Cost: 0.5 energy)
+Vishnu heals Entity2 for 9.0 health. (Cost: 0.5 energy)
+
+======================================================================
+Turn 11 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     69.3 |     40.7 |     11 |    100.0
+Entity2         |     59.4 |     50.0 |      8 |    100.0
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 12 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+High Priest Tenzin: High Priest Tenzin's heavy attack missed Entity2!
+Entity2: Entity2's magic attack missed High Priest Tenzin!
+
+======================================================================
+Turn 12 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     69.3 |     40.7 |      8 |     85.2
+Entity2         |     59.4 |     25.0 |      4 |    100.0
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 13 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+Entity2: Entity2 takes 19.4 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Heavy Attack for 19.4 actual damage.
+Entity2: Entity2 uses a health potion and heals 30 HP.
+Brahma heals Entity2 for 15.9 HP. (Cost: 1.6 energy)
+
+======================================================================
+Turn 13 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     69.3 |     45.7 |      1 |     71.3
+Entity2         |     85.9 |     30.0 |      4 |    100.0
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 14 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+Entity2: Entity2 takes 11.8 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 11.8 actual damage.
+Entity2: Entity2's normal attack missed High Priest Tenzin!
+High Priest Tenzin: High Priest Tenzin takes 14.6 damage (blocked 8.0)
+Shiva inflicts decay on High Priest Tenzin: -22.6 HP (Cost: 0.6 energy)
+Vishnu heals High Priest Tenzin for 7.5 health. (Cost: 0.4 energy)
+
+======================================================================
+Turn 14 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     62.2 |     45.7 |     -4 |     70.1
+Entity2         |     74.1 |     30.0 |      2 |     95.8
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 15 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+High Priest Tenzin: High Priest Tenzin's normal attack missed Entity2!
+High Priest Tenzin: High Priest Tenzin takes 22.1 damage (blocked 8.0)
+Entity2: Entity2 used Heavy Attack for 22.1 actual damage.
+
+======================================================================
+Turn 15 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     40.1 |     45.7 |     -6 |     75.9
+Entity2         |     74.1 |     30.0 |     -5 |     87.4
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 16 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+High Priest Tenzin: High Priest Tenzin heals for 20 (Health: 60.1), karma now -1.
+High Priest Tenzin: High Priest Tenzin takes 24.2 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 24.2 actual damage.
+
+======================================================================
+Turn 16 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     35.9 |     45.7 |     -1 |     96.3
+Entity2         |     74.1 |     30.0 |    -10 |     86.9
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 17 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+High Priest Tenzin: High Priest Tenzin uses a health potion and heals 30 HP.
+High Priest Tenzin: High Priest Tenzin takes 14.4 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 14.4 actual damage.
+Brahma heals High Priest Tenzin for 22.4 HP. (Cost: 2.2 energy)
+Vishnu grants mana to High Priest Tenzin: +3.9 MP (Cost: 0.2 energy)
+
+======================================================================
+Turn 17 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     74.0 |     49.7 |     -1 |    100.0
+Entity2         |     74.1 |     30.0 |    -15 |     95.2
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 18 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+High Priest Tenzin: High Priest Tenzin's heavy attack missed Entity2!
+High Priest Tenzin: High Priest Tenzin takes 20.0 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 20.0 actual damage.
+Entity2: Entity2 takes 17.5 damage (blocked 8.0)
+Shiva inflicts decay on Entity2: -25.5 HP (Cost: 0.6 energy)
+
+======================================================================
+Turn 18 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     54.0 |     49.7 |     -4 |     87.1
+Entity2         |     56.5 |     30.0 |    -20 |     99.8
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 19 --------------------
+
+
+*** Cosmic Event: Mystic Winds - Evasive winds aid dodging—accuracy and evasion are slightly improved. ***
+Entity2: Entity2 takes 10.8 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 10.8 actual damage.
+Entity2: Entity2's normal attack missed High Priest Tenzin!
+
+======================================================================
+Turn 19 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     54.0 |     49.7 |     -9 |     85.8
+Entity2         |     45.7 |     30.0 |    -22 |     96.3
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 20 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+Entity2: Entity2 takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 24.8 damage (blocked 8.0)
+Entity2: Entity2 used Heavy Attack for 24.8 actual damage.
+Vishnu heals Entity2 for 4.5 health. (Cost: 0.2 energy)
+
+======================================================================
+Turn 20 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     29.1 |     29.7 |    -14 |     94.8
+Entity2         |     13.2 |     35.0 |    -29 |     83.5
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 21 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+High Priest Tenzin: High Priest Tenzin heals for 20 (Health: 49.1), karma now -9.
+High Priest Tenzin: High Priest Tenzin takes 37.0 damage (blocked 8.0)
+Entity2: Entity2 used Magic Attack for 37.0 actual damage.
+Brahma heals High Priest Tenzin for 24.1 HP. (Cost: 2.4 energy)
+
+======================================================================
+Turn 21 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     36.2 |     29.7 |     -9 |    100.0
+Entity2         |     13.2 |     10.0 |    -34 |     89.5
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+
+-------------------- Turn 22 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Entity2: Entity2 takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+
+======================================================================
+Turn 22 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     36.2 |      4.7 |    -14 |    100.0
+Entity2         |      0.0 |     10.0 |    -34 |     99.5
+Arthur 2.0      |      0.0 |      0.0 |    -10 |    106.6
+Intern Greg     |      0.0 |     70.9 |     42 |    100.0
+======================================================================
+
+High Priest Tenzin wins after 22 turns!
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+Arthur 2.0: Arthur 2.0 takes 8.8 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Quick Attack for 8.8 actual damage.
+Entity2: Entity2's heavy attack missed Intern Greg!
+Arthur 2.0 emits an EMP pulse, disabling Intern Greg's magic channels!
+Intern Greg: Intern Greg heals for 0 (Health: 120.0), karma now 55.
+Brahma finds no mortal worthy of aid.
+Arthur 2.0: Arthur 2.0 takes 11.9 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -21.9 HP (Cost: 0.5 energy)
+Vishnu grants mana to High Priest Tenzin: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |    100.0 |     47 |    100.0
+Entity2         |    120.0 |    100.0 |     47 |     85.7
+Arthur 2.0      |     89.4 |      0.0 |      0 |    120.0
+Intern Greg     |    120.0 |     80.0 |     55 |    100.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+Arthur 2.0: Arthur 2.0 takes 8.8 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Quick Attack for 8.8 actual damage.
+Entity2: Entity2's heavy attack missed Intern Greg!
+Arthur 2.0 emits an EMP pulse, disabling Intern Greg's magic channels!
+Intern Greg: Intern Greg heals for 0 (Health: 120.0), karma now 55.
+Brahma finds no mortal worthy of aid.
+Arthur 2.0: Arthur 2.0 takes 11.9 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -21.9 HP (Cost: 0.5 energy)
+Vishnu grants mana to High Priest Tenzin: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |    100.0 |     47 |    100.0
+Entity2         |    120.0 |    100.0 |     47 |     85.7
+Arthur 2.0      |     89.4 |      0.0 |      0 |    120.0
+Intern Greg     |    120.0 |     80.0 |     55 |    100.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Arthur 2.0: Arthur 2.0 takes 9.6 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 9.6 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling Entity2's magic channels!
+Intern Greg: Nervously attempting heavy_attack...
+Arthur 2.0: Arthur 2.0 takes 24.1 damage (blocked 10.0)
+Intern Greg: Intern Greg used Heavy Attack for 24.1 actual damage.
+Brahma finds no mortal worthy of aid.
+Arthur 2.0: Arthur 2.0 takes 10.0 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -20.0 HP (Cost: 1.0 energy)
+Vishnu grants mana to Intern Greg: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     70.0 |     45 |    100.0
+Entity2         |    120.0 |     75.0 |     45 |     99.3
+Arthur 2.0      |     66.3 |      0.0 |      0 |    120.0
+Intern Greg     |     83.0 |    100.0 |     43 |     80.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Arthur 2.0: Arthur 2.0 takes 9.6 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 9.6 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling Entity2's magic channels!
+Intern Greg: Nervously attempting heavy_attack...
+Arthur 2.0: Arthur 2.0 takes 24.1 damage (blocked 10.0)
+Intern Greg: Intern Greg used Heavy Attack for 24.1 actual damage.
+Brahma finds no mortal worthy of aid.
+Arthur 2.0: Arthur 2.0 takes 10.0 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -20.0 HP (Cost: 1.0 energy)
+Vishnu grants mana to Intern Greg: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     70.0 |     45 |    100.0
+Entity2         |    120.0 |     75.0 |     45 |     99.3
+Arthur 2.0      |     66.3 |      0.0 |      0 |    120.0
+Intern Greg     |     83.0 |    100.0 |     43 |     80.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Intern Greg: Intern Greg takes 9.8 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Quick Attack for 9.8 actual damage.
+Arthur 2.0: Arthur 2.0 takes 9.6 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 9.6 actual damage.
+Intern Greg: Intern Greg takes 24.7 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Normal Attack for 24.7 actual damage.
+Intern Greg: Nervously attempting normal_attack...
+Intern Greg: Intern Greg's normal attack missed Arthur 2.0!
+Brahma finds no mortal worthy of aid.
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     65.0 |     42 |    100.0
+Entity2         |    120.0 |     70.0 |     40 |     96.0
+Arthur 2.0      |     56.7 |      0.0 |     -5 |    119.0
+Intern Greg     |     48.5 |    100.0 |     41 |     70.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Intern Greg: Intern Greg takes 9.8 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Quick Attack for 9.8 actual damage.
+Arthur 2.0: Arthur 2.0 takes 9.6 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 9.6 actual damage.
+Intern Greg: Intern Greg takes 24.7 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Normal Attack for 24.7 actual damage.
+Intern Greg: Nervously attempting normal_attack...
+Intern Greg: Intern Greg's normal attack missed Arthur 2.0!
+Brahma finds no mortal worthy of aid.
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     65.0 |     42 |    100.0
+Entity2         |    120.0 |     70.0 |     40 |     96.0
+Arthur 2.0      |     56.7 |      0.0 |     -5 |    119.0
+Intern Greg     |     48.5 |    100.0 |     41 |     70.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+High Priest Tenzin: High Priest Tenzin's normal attack missed Arthur 2.0!
+Entity2: Entity2's normal attack missed Intern Greg!
+Arthur 2.0 emits an EMP pulse, disabling Entity2's magic channels!
+Intern Greg: Nervously attempting normal_attack...
+Arthur 2.0: Arthur 2.0 takes 3.3 damage (blocked 10.0)
+Intern Greg: Intern Greg used Normal Attack for 3.3 actual damage.
+Brahma finds no mortal worthy of aid.
+Intern Greg: Intern Greg takes 2.8 damage (blocked 8.0)
+Shiva inflicts decay on Intern Greg: -10.8 HP (Cost: 0.5 energy)
+Vishnu grants mana to High Priest Tenzin: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |    100.0 |     48 |     96.6
+Entity2         |    120.0 |     80.0 |     48 |     98.9
+Arthur 2.0      |    106.7 |      0.0 |      0 |    120.0
+Intern Greg     |    117.2 |    100.0 |     45 |     90.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Mystic Winds - Evasive winds aid dodging—accuracy and evasion are slightly improved. ***
+Intern Greg: Intern Greg takes 22.9 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Heavy Attack for 22.9 actual damage.
+Arthur 2.0: Arthur 2.0 takes 10.9 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 10.9 actual damage.
+Intern Greg: Intern Greg takes 18.9 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Normal Attack for 18.9 actual damage.
+Intern Greg: Forgot what they were doing. Takes no action.
+Brahma heals Intern Greg for 20.6 HP. (Cost: 4.1 energy)
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |    100.0 |     41 |     81.7
+Entity2         |    120.0 |     80.0 |     43 |     95.2
+Arthur 2.0      |     95.8 |      0.0 |     -5 |    117.9
+Intern Greg     |     96.1 |    100.0 |     45 |     95.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Arthur 2.0: Arthur 2.0 takes 17.9 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Heavy Attack for 17.9 actual damage.
+Intern Greg: Intern Greg takes 24.7 damage (blocked 8.0)
+Entity2: Entity2 used Heavy Attack for 24.7 actual damage.
+Entity2: Entity2 takes 16.7 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Normal Attack for 16.7 actual damage.
+Intern Greg: Nervously attempting quick_attack...
+High Priest Tenzin: High Priest Tenzin takes 10.8 damage (blocked 8.0)
+Intern Greg: Intern Greg used Quick Attack for 10.8 actual damage.
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    109.2 |     95.0 |     34 |     67.5
+Entity2         |    103.3 |     75.0 |     36 |     82.6
+Arthur 2.0      |     78.0 |      0.0 |    -10 |    115.0
+Intern Greg     |     71.3 |    100.0 |     42 |     90.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+Entity2: Entity2 takes 13.1 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 13.1 actual damage.
+Entity2: Entity2's quick attack missed High Priest Tenzin!
+Arthur 2.0 emits an EMP pulse, disabling Intern Greg's magic channels!
+Intern Greg: Nervously attempting normal_attack...
+Entity2: Entity2 takes 12.0 damage (blocked 8.0)
+Intern Greg: Intern Greg used Normal Attack for 12.0 actual damage.
+Brahma finds no mortal worthy of aid.
+Intern Greg: Intern Greg takes 2.6 damage (blocked 8.0)
+Shiva inflicts decay on Intern Greg: -10.6 HP (Cost: 0.5 energy)
+Vishnu grants mana to Intern Greg: +8.9 MP (Cost: 0.9 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |    100.0 |     45 |     98.4
+Entity2         |     94.9 |    100.0 |     49 |    100.0
+Arthur 2.0      |    110.0 |      0.0 |      0 |    120.0
+Intern Greg     |    117.4 |     88.9 |     45 |     90.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Entity2: Entity2 takes 10.8 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Quick Attack for 10.8 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 10.8 damage (blocked 8.0)
+Entity2: Entity2 used Quick Attack for 10.8 actual damage.
+Arthur 2.0: Arthur 2.0's heavy attack missed High Priest Tenzin!
+Intern Greg: Intern Greg rests and recovers 22.3 stamina and 7.4 mana.
+Brahma finds no mortal worthy of aid.
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    109.2 |    100.0 |     42 |    100.0
+Entity2         |     84.1 |    100.0 |     46 |    100.0
+Arthur 2.0      |    110.0 |      0.0 |     -3 |    110.6
+Intern Greg     |    117.4 |     96.3 |     45 |    100.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+High Priest Tenzin: High Priest Tenzin's normal attack missed Arthur 2.0!
+Entity2: Entity2's heavy attack missed Intern Greg!
+High Priest Tenzin: High Priest Tenzin takes 20.5 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Normal Attack for 20.5 actual damage.
+Intern Greg: Intern Greg heals for 2.570741924176261 (Health: 120.0), karma now 50.
+Brahma heals High Priest Tenzin for 22.0 HP. (Cost: 4.4 energy)
+Arthur 2.0: Arthur 2.0 takes 10.6 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -20.6 HP (Cost: 1.0 energy)
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    110.8 |     95.0 |     40 |     98.5
+Entity2         |     84.1 |     95.0 |     43 |     85.4
+Arthur 2.0      |     99.4 |      0.0 |     -8 |    109.1
+Intern Greg     |    120.0 |     96.3 |     50 |    100.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+Entity2: Entity2 takes 10.8 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Quick Attack for 10.8 actual damage.
+Intern Greg: Intern Greg takes 18.7 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 18.7 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling Entity2's magic channels!
+Intern Greg: Nervously attempting normal_attack...
+High Priest Tenzin: High Priest Tenzin takes 22.2 damage (blocked 8.0)
+Intern Greg: Intern Greg used Normal Attack for 22.2 actual damage.
+Brahma heals High Priest Tenzin for 16.2 HP. (Cost: 1.6 energy)
+Intern Greg: Intern Greg takes 3.5 damage (blocked 8.0)
+Shiva inflicts decay on Intern Greg: -11.5 HP (Cost: 0.3 energy)
+Vishnu grants mana to Intern Greg: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    114.0 |    100.0 |     47 |    100.0
+Entity2         |    109.2 |     80.0 |     45 |     97.6
+Arthur 2.0      |    110.0 |      0.0 |      0 |    120.0
+Intern Greg     |     97.8 |    100.0 |     45 |     90.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+High Priest Tenzin: High Priest Tenzin's heavy attack missed Intern Greg!
+High Priest Tenzin: High Priest Tenzin takes 18.2 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 18.2 actual damage.
+Intern Greg: Intern Greg takes 13.0 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Quick Attack for 13.0 actual damage.
+Intern Greg: Nervously attempting normal_attack...
+High Priest Tenzin: High Priest Tenzin takes 9.9 damage (blocked 8.0)
+Intern Greg: Intern Greg used Normal Attack for 9.9 actual damage.
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     85.9 |    100.0 |     44 |     88.0
+Entity2         |    109.2 |     80.0 |     40 |     97.3
+Arthur 2.0      |    110.0 |      0.0 |     -3 |    120.0
+Intern Greg     |     84.8 |    100.0 |     40 |     80.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+High Priest Tenzin: High Priest Tenzin's heavy attack missed Arthur 2.0!
+High Priest Tenzin: High Priest Tenzin takes 9.8 damage (blocked 8.0)
+Entity2: Entity2 used Quick Attack for 9.8 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 30.3 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Heavy Attack for 30.3 actual damage.
+Intern Greg: Intern Greg rests and recovers 15.2 stamina and 9.2 mana.
+Brahma heals High Priest Tenzin for 24.3 HP. (Cost: 2.4 energy)
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     70.1 |     95.0 |     41 |     75.5
+Entity2         |    109.2 |     75.0 |     37 |     99.1
+Arthur 2.0      |    110.0 |      0.0 |    -10 |    107.2
+Intern Greg     |     84.8 |    100.0 |     40 |     95.2
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Mystic Winds - Evasive winds aid dodging—accuracy and evasion are slightly improved. ***
+Entity2: Entity2 takes 10.8 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Quick Attack for 10.8 actual damage.
+Arthur 2.0: Arthur 2.0 takes 14.0 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 14.0 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling High Priest Tenzin's magic channels!
+Intern Greg: Nervously attempting heavy_attack...
+Arthur 2.0: Arthur 2.0 takes 13.5 damage (blocked 10.0)
+Intern Greg: Intern Greg used Heavy Attack for 13.5 actual damage.
+Brahma finds no mortal worthy of aid.
+Entity2: Entity2 takes 3.6 damage (blocked 8.0)
+Shiva inflicts decay on Entity2: -11.6 HP (Cost: 0.6 energy)
+Vishnu grants mana to High Priest Tenzin: +9.7 MP (Cost: 1.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     89.7 |     47 |    100.0
+Entity2         |    105.7 |    100.0 |     45 |     96.7
+Arthur 2.0      |     82.5 |      0.0 |      0 |    120.0
+Intern Greg     |    120.0 |    100.0 |     43 |     80.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Intern Greg: Intern Greg takes 10.4 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Heavy Attack for 10.4 actual damage.
+Arthur 2.0: Arthur 2.0 takes 8.8 damage (blocked 10.0)
+Entity2: Entity2 used Quick Attack for 8.8 actual damage.
+Intern Greg: Intern Greg takes 43.0 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Heavy Attack for 43.0 actual damage.
+Intern Greg: Nervously attempting normal_attack...
+Entity2: Entity2 takes 18.8 damage (blocked 8.0)
+Intern Greg: Intern Greg used Normal Attack for 18.8 actual damage.
+Brahma heals Entity2 for 23.2 HP. (Cost: 4.6 energy)
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     89.7 |     40 |     89.9
+Entity2         |    110.1 |    100.0 |     42 |    100.0
+Arthur 2.0      |     73.7 |      0.0 |     -7 |    109.5
+Intern Greg     |     66.6 |    100.0 |     38 |     70.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Entity2: Entity2's heavy attack missed Arthur 2.0!
+Arthur 2.0: Arthur 2.0's normal attack missed High Priest Tenzin!
+Intern Greg: Intern Greg rests and recovers 24.2 stamina and 6.3 mana.
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     64.7 |     35 |    100.0
+Entity2         |    110.1 |    100.0 |     39 |     86.4
+Arthur 2.0      |     73.7 |      0.0 |     -9 |    108.2
+Intern Greg     |     29.6 |    100.0 |     38 |     94.2
+======================================================================
+
+
+-------------------- Turn 4 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+High Priest Tenzin: High Priest Tenzin's quick attack missed Entity2!
+Entity2: Entity2's heavy attack missed Arthur 2.0!
+Arthur 2.0 emits an EMP pulse, disabling Entity2's magic channels!
+Intern Greg: Nervously attempting magic_attack...
+High Priest Tenzin: High Priest Tenzin takes 37.0 damage (blocked 8.0)
+Intern Greg: Intern Greg used Magic Attack for 37.0 actual damage.
+Vishnu heals Intern Greg for 12.3 health. (Cost: 1.2 energy)
+
+======================================================================
+Turn 4 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     83.0 |     64.7 |     34 |    100.0
+Entity2         |    110.1 |     80.0 |     36 |     86.1
+Arthur 2.0      |     73.7 |      0.0 |     -9 |    116.9
+Intern Greg     |     41.9 |     75.0 |     33 |     94.2
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+Arthur 2.0: Arthur 2.0 takes 10.6 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 10.6 actual damage.
+Entity2: Entity2's magic attack missed High Priest Tenzin!
+Arthur 2.0 emits an EMP pulse, disabling High Priest Tenzin's magic channels!
+Intern Greg: Nervously attempting heavy_attack...
+Intern Greg: Intern Greg's heavy attack missed Entity2!
+Brahma finds no mortal worthy of aid.
+Arthur 2.0: Arthur 2.0 takes 9.1 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -19.1 HP (Cost: 1.0 energy)
+Vishnu grants mana to Entity2: +9.1 MP (Cost: 0.9 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     80.0 |     45 |     98.4
+Entity2         |    120.0 |     84.1 |     46 |    100.0
+Arthur 2.0      |     90.3 |      0.0 |      0 |    120.0
+Intern Greg     |    120.0 |    100.0 |     47 |     80.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Mystic Winds - Evasive winds aid dodging—accuracy and evasion are slightly improved. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 15.7 damage (blocked 8.0)
+Entity2: Entity2 used Normal Attack for 15.7 actual damage.
+Intern Greg: Intern Greg takes 13.0 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Quick Attack for 13.0 actual damage.
+Intern Greg: Nervously attempting magic_attack...
+Arthur 2.0: Arthur 2.0 takes 35.0 damage (blocked 10.0)
+Intern Greg: Intern Greg used Magic Attack for 35.0 actual damage.
+Brahma heals Intern Greg for 23.3 HP. (Cost: 4.7 energy)
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    104.3 |     55.0 |     40 |    100.0
+Entity2         |    120.0 |     84.1 |     41 |     96.9
+Arthur 2.0      |     55.3 |      0.0 |     -3 |    120.0
+Intern Greg     |     93.3 |     75.0 |     42 |     80.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+Entity2: Entity2 used Magic Attack for 37.0 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 13.0 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Quick Attack for 13.0 actual damage.
+Intern Greg: Nervously attempting normal_attack...
+Intern Greg: Intern Greg's normal attack missed High Priest Tenzin!
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     91.3 |     30.0 |     35 |    100.0
+Entity2         |    120.0 |     59.1 |     36 |    100.0
+Arthur 2.0      |     55.3 |      0.0 |     -6 |    120.0
+Intern Greg     |     19.3 |     75.0 |     40 |     70.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Intern Greg: Intern Greg takes 22.7 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 22.7 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 9.8 damage (blocked 8.0)
+Entity2: Entity2 used Quick Attack for 9.8 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling Intern Greg's magic channels!
+Intern Greg: Intern Greg rests and recovers 15.9 stamina and 8.0 mana.
+Brahma finds no mortal worthy of aid.
+High Priest Tenzin: High Priest Tenzin takes 4.8 damage (blocked 8.0)
+Shiva inflicts decay on High Priest Tenzin: -12.8 HP (Cost: 0.6 energy)
+Vishnu grants mana to Intern Greg: +10.4 MP (Cost: 1.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    105.4 |     95.0 |     45 |     99.2
+Entity2         |    120.0 |     95.0 |     47 |    100.0
+Arthur 2.0      |    110.0 |      0.0 |      0 |    120.0
+Intern Greg     |     97.3 |     98.4 |     50 |    100.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Entity2: Entity2's normal attack missed High Priest Tenzin!
+Intern Greg: Intern Greg takes 15.6 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Normal Attack for 15.6 actual damage.
+Intern Greg: Intern Greg rests and recovers 19.9 stamina and 9.0 mana.
+Brahma finds no mortal worthy of aid.
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    105.4 |     70.0 |     40 |    100.0
+Entity2         |    120.0 |     95.0 |     45 |     98.7
+Arthur 2.0      |    110.0 |      0.0 |     -5 |    119.5
+Intern Greg     |     44.7 |    100.0 |     50 |    100.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Entity2: Entity2 takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Intern Greg: Intern Greg takes 10.8 damage (blocked 8.0)
+Entity2: Entity2 used Quick Attack for 10.8 actual damage.
+Intern Greg: Intern Greg takes 13.0 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Quick Attack for 13.0 actual damage.
+Intern Greg: Intern Greg rests and recovers 23.8 stamina and 5.9 mana.
+Brahma heals Intern Greg for 17.2 HP. (Cost: 1.7 energy)
+High Priest Tenzin: High Priest Tenzin takes 5.2 damage (blocked 8.0)
+Shiva inflicts decay on High Priest Tenzin: -13.2 HP (Cost: 0.3 energy)
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    100.2 |     45.0 |     35 |    100.0
+Entity2         |     83.0 |     95.0 |     42 |    100.0
+Arthur 2.0      |    110.0 |      0.0 |     -8 |    120.0
+Intern Greg     |     38.1 |    100.0 |     50 |    100.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Arthur 2.0: Arthur 2.0 takes 25.9 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Normal Attack for 25.9 actual damage.
+Arthur 2.0: Arthur 2.0 takes 35.0 damage (blocked 10.0)
+Entity2: Entity2 used Magic Attack for 35.0 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling Entity2's magic channels!
+Intern Greg: Nervously attempting heavy_attack...
+Intern Greg: Intern Greg's heavy attack missed Entity2!
+Brahma finds no mortal worthy of aid.
+Arthur 2.0: Arthur 2.0 takes 11.1 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -21.1 HP (Cost: 1.1 energy)
+Vishnu grants mana to Intern Greg: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |    100.0 |     45 |     96.0
+Entity2         |    120.0 |     55.0 |     45 |    100.0
+Arthur 2.0      |     38.0 |      0.0 |      0 |    120.0
+Intern Greg     |    120.0 |    100.0 |     47 |     80.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Astral Surge - A surge of astral energy empowers divine intervention, reducing their cost by 50% this turn. ***
+High Priest Tenzin: High Priest Tenzin's normal attack missed Intern Greg!
+High Priest Tenzin: High Priest Tenzin takes 37.0 damage (blocked 8.0)
+Entity2: Entity2 used Magic Attack for 37.0 actual damage.
+Intern Greg: Intern Greg takes 34.0 damage (blocked 8.0)
+Arthur 2.0 activates Overdrive! Unleashes 34.0 damage using excess heat.
+Intern Greg: Intern Greg heals for 20 (Health: 106.0), karma now 52.
+Brahma heals High Priest Tenzin for 16.0 HP. (Cost: 1.6 energy)
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     99.0 |    100.0 |     43 |     93.3
+Entity2         |    120.0 |     30.0 |     40 |    100.0
+Arthur 2.0      |     38.0 |      0.0 |      0 |    120.0
+Intern Greg     |    106.0 |    100.0 |     52 |     95.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Cosmic Drought - Cosmic energies are low; mana recovery suffers. ***
+Entity2: Entity2 takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+High Priest Tenzin: High Priest Tenzin takes 37.0 damage (blocked 8.0)
+Entity2: Entity2 used Magic Attack for 37.0 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling High Priest Tenzin's magic channels!
+Intern Greg: Nervously attempting heavy_attack...
+Arthur 2.0: Arthur 2.0 takes 39.1 damage (blocked 10.0)
+Intern Greg: Intern Greg used Heavy Attack for 39.1 actual damage.
+Brahma heals High Priest Tenzin for 18.2 HP. (Cost: 3.6 energy)
+Intern Greg: Intern Greg takes 4.4 damage (blocked 8.0)
+Shiva inflicts decay on Intern Greg: -12.4 HP (Cost: 0.6 energy)
+Vishnu grants mana to High Priest Tenzin: +9.9 MP (Cost: 1.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    101.2 |     59.9 |     45 |    100.0
+Entity2         |     83.0 |     70.0 |     45 |    100.0
+Arthur 2.0      |     70.9 |      0.0 |      0 |    120.0
+Intern Greg     |    115.6 |    100.0 |     43 |     80.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+High Priest Tenzin: High Priest Tenzin's quick attack missed Intern Greg!
+Arthur 2.0: Arthur 2.0 takes 23.0 damage (blocked 10.0)
+Entity2: Entity2 used Normal Attack for 23.0 actual damage.
+Entity2: Entity2 takes 23.8 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Normal Attack for 23.8 actual damage.
+Intern Greg: Nervously attempting quick_attack...
+Arthur 2.0: Arthur 2.0 takes 8.8 damage (blocked 10.0)
+Intern Greg: Intern Greg used Quick Attack for 8.8 actual damage.
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    101.2 |     64.9 |     44 |    100.0
+Entity2         |     59.2 |     75.0 |     40 |     99.2
+Arthur 2.0      |     39.2 |      0.0 |     -5 |    120.0
+Intern Greg     |    115.6 |    100.0 |     40 |     75.0
+======================================================================
+
+
+-------------------- Turn 3 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Entity2: Entity2 takes 38.6 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Heavy Attack for 38.6 actual damage.
+Entity2: Entity2 uses a health potion and heals 30 HP.
+High Priest Tenzin: High Priest Tenzin takes 35.0 damage (blocked 8.0)
+Arthur 2.0 activates Overdrive! Unleashes 35.0 damage using excess heat.
+Intern Greg: Nervously attempting heavy_attack...
+Intern Greg: Intern Greg's heavy attack missed High Priest Tenzin!
+Intern Greg: Intern Greg takes 5.1 damage (blocked 8.0)
+Shiva inflicts decay on Intern Greg: -13.1 HP (Cost: 0.7 energy)
+
+======================================================================
+Turn 3 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |     66.2 |     64.9 |     37 |     85.1
+Entity2         |     50.7 |     75.0 |     40 |    100.0
+Arthur 2.0      |     39.2 |      0.0 |     -5 |    120.0
+Intern Greg     |    110.5 |    100.0 |     37 |     55.0
+======================================================================
+
+
+-------------------- Turn 1 --------------------
+
+
+*** Cosmic Event: Temporal Flux - Time seems to slow, allowing better recovery of stamina. ***
+Arthur 2.0: Arthur 2.0 takes 27.3 damage (blocked 10.0)
+High Priest Tenzin: High Priest Tenzin used Heavy Attack for 27.3 actual damage.
+Intern Greg: Intern Greg takes 11.4 damage (blocked 8.0)
+Entity2: Entity2 used Heavy Attack for 11.4 actual damage.
+Arthur 2.0 emits an EMP pulse, disabling High Priest Tenzin's magic channels!
+Intern Greg: Intern Greg rests and recovers 19.5 stamina and 8.8 mana.
+Brahma finds no mortal worthy of aid.
+Arthur 2.0: Arthur 2.0 takes 11.3 damage (blocked 10.0)
+Shiva inflicts decay on Arthur 2.0: -21.3 HP (Cost: 1.1 energy)
+Vishnu grants mana to Intern Greg: +0.0 MP (Cost: 0.0 energy)
+
+======================================================================
+Turn 1 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     80.0 |     43 |     86.2
+Entity2         |    120.0 |    100.0 |     43 |     88.6
+Arthur 2.0      |     71.4 |      0.0 |      0 |    120.0
+Intern Greg     |    108.6 |    100.0 |     50 |    100.0
+======================================================================
+
+
+-------------------- Turn 2 --------------------
+
+
+*** Cosmic Event: Celestial Alignment - A rare alignment boosts combat effectiveness. ***
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+High Priest Tenzin: High Priest Tenzin used Magic Attack for 37.0 actual damage.
+Intern Greg: Intern Greg takes 37.0 damage (blocked 8.0)
+Entity2: Entity2 used Magic Attack for 37.0 actual damage.
+Entity2: Entity2 takes 13.0 damage (blocked 8.0)
+Arthur 2.0: Arthur 2.0 used Quick Attack for 13.0 actual damage.
+Intern Greg: Intern Greg rests and recovers 20.5 stamina and 9.0 mana.
+Brahma finds no mortal worthy of aid.
+
+======================================================================
+Turn 2 Summary:
+======================================================================
+Name            |   Health |     Mana |  Karma |  Stamina
+----------------------------------------------------------------------
+High Priest Tenzin |    120.0 |     60.0 |     38 |     92.3
+Entity2         |    107.0 |     75.0 |     38 |     94.7
+Arthur 2.0      |     71.4 |      0.0 |     -3 |    120.0
+Intern Greg     |     34.6 |    100.0 |     50 |    100.0
+======================================================================
+

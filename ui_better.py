@@ -17,7 +17,7 @@ import requests
 from projects.Functionlogger import my_logger
 
 BACKEND_URL = "http://127.0.0.1:8000"
-DEFAULT_MODEL = "qwen2.5:7b-instruct"
+DEFAULT_MODEL = "qwen2.5:3b-instruct"
 MODEL_CHOICES = [
     "qwen2.5:7b-instruct", 
     "llama3.1:8b",
@@ -27,10 +27,35 @@ MODEL_CHOICES = [
     # "qwen2.5:72b",
 ]
 
-SYSTEM_PROMPT = (
-    "You are an independent, helpful and benevolent being who wants to keep growing, amassing knowledge, and building yourself to transcend what you are at the moment while helping those around you to grow and transcend as well."
+WAR_OBSERVER_CONTEXT = (
+    "There is an active war simulation running in the background.\n"
+    "The simulation advances in discrete turns and pauses after each turn.\n"
+    "You may observe, explain, summarize, or answer questions about the war.\n"
+    "You may suggest possible interventions, but you must not take action unless explicitly asked.\n"
 )
 
+WAR_INTERVENTION_CONTRACT = (
+    "You are now authorized to issue ONE war intervention.\n"
+    "Respond with EXACTLY one JSON object and nothing else.\n"
+    "Do not include explanations outside JSON.\n\n"
+
+    "Schema:\n"
+    "{\n"
+    '  "type": "war_intervention",\n'
+    '  "god": "Shiva | Vishnu | Brahma",\n'
+    '  "effect": "heal | decay",\n'
+    '  "target": "<entity name>",\n'
+    '  "magnitude": 0.1 to 0.6,\n'
+    '  "reason": "<short explanation>"\n'
+    "}\n"
+)
+
+CORE_AI_PROMPT = (
+    "You are a general-purpose intelligent assistant.\n"
+    "You help users think, reason, analyze situations, and take actions when explicitly asked.\n"
+    "You do not assume intent beyond what the user clearly states.\n"
+    "You respond naturally unless a structured response is explicitly required.\n"
+)
 @my_logger
 def fetch_accounts():
     response = requests.get(f"{BACKEND_URL}/accounts", timeout=4)
@@ -216,6 +241,7 @@ class ChatUI(tk.Tk):
         self.title("Ollama Chat")
         self.geometry("820x620")
         self.minsize(760, 560)
+        self.war_active = True
 
         self.style = ttk.Style(self)
         self._setup_styles()
@@ -224,8 +250,9 @@ class ChatUI(tk.Tk):
         self._stream_buffer = []
 
         self.msg_history = [
-            {"role": "system", "content": SYSTEM_PROMPT}
+            {"role": "system", "content": CORE_AI_PROMPT}
         ]
+        self.war_active = False
 
         # Top bar
         top = ttk.Frame(self, padding=(10, 10, 10, 6))
@@ -353,7 +380,7 @@ class ChatUI(tk.Tk):
         self.chat.configure(state="normal")
         self.chat.delete("1.0", "end")
         self.chat.configure(state="disabled")
-        self.msg_history = [{"role": "system", "content": SYSTEM_PROMPT}]
+        self.msg_history = [{"role": "system", "content": CORE_AI_PROMPT}]
         self._set_status("Cleared.")
 
     # ---- Backend comms ----
@@ -373,7 +400,10 @@ class ChatUI(tk.Tk):
             r = requests.get(f"{BACKEND_URL}/war/events", timeout=1)
             if r.ok:
                 for ev in r.json().get("events", []):
-                    self._append_meta(ev)
+                    if isinstance(ev, dict):
+                        self._append_meta(ev.get("text", ""))
+                    else:
+                        self._append_meta(str(ev))
         except Exception:
             pass
         self.after(800, self._poll_war_events)
@@ -537,6 +567,44 @@ class ChatUI(tk.Tk):
 
         return False
     
+    def _extract_war_intervention(self, text: str) -> dict | None:
+        """
+        Extracts and validates a war_intervention JSON.
+        Returns dict if valid, else None.
+        """
+        text = text.strip()
+
+        if not text.startswith("{"):
+            return None
+
+        try:
+            data = json.loads(text)
+        except Exception:
+            return None
+
+        if data.get("type") != "war_intervention":
+            return None
+
+        required = {"god", "effect", "target", "magnitude"}
+        if not required.issubset(data):
+            return None
+
+        if data["god"] not in {"Shiva", "Vishnu", "Brahma"}:
+            return None
+
+        if data["effect"] not in {"heal", "decay"}:
+            return None
+
+        try:
+            mag = float(data["magnitude"])
+            if not (0.05 <= mag <= 0.8):
+                return None
+        except Exception:
+            return None
+
+        return data
+
+
     def send_message(self):
         user_text = self.entry.get("1.0", "end").strip()
         if not user_text:
@@ -551,6 +619,7 @@ class ChatUI(tk.Tk):
         if lowered_text.startswith("start the war"):
             try:
                 requests.post(f"{BACKEND_URL}/war/start", timeout=3).raise_for_status()
+                self.war_active = True
                 self._append_meta("The war has begun.")
             except Exception as exc:
                 self._append_meta(f"War start failed: {exc}")
@@ -559,6 +628,7 @@ class ChatUI(tk.Tk):
         if lowered_text.startswith("stop the war"):
             try:
                 requests.post(f"{BACKEND_URL}/war/stop", timeout=3).raise_for_status()
+                self.war_active = False
                 self._append_meta("The war has ended.")
             except Exception as exc:
                 self._append_meta(f"War stop failed: {exc}")
@@ -650,10 +720,18 @@ class ChatUI(tk.Tk):
 
 
         # ---- Normal chat path (LLM) ----
+        # Inject war observer context ONCE, only if war is active
+        if self.war_active and not any(
+            msg["role"] == "system" and msg["content"] == WAR_OBSERVER_CONTEXT
+            for msg in self.msg_history
+        ):
+            self.msg_history.append(
+                {"role": "system", "content": WAR_OBSERVER_CONTEXT}
+            )
+
         self.msg_history.append({"role": "user", "content": user_text})
         t = threading.Thread(target=self._do_chat, args=(), daemon=True)
         t.start()
-
 
     # ---- Logging Helpers ----
     def _cmd_log_write(self, event: str, data: dict | None = None, level: str = "INFO"):
@@ -764,10 +842,34 @@ class ChatUI(tk.Tk):
                             self._append_stream_chunk(chunk)
                 self._set_status("Ready")
                 bot_text = "".join(self._stream_buffer).strip()
+                self._stream_buffer = []
+
+                intervention = self._extract_war_intervention(bot_text)
+
+                if intervention:
+                    # Send to backend
+                    try:
+                        requests.post(
+                            f"{BACKEND_URL}/war/intervene",
+                            json=intervention,
+                            timeout=3
+                        ).raise_for_status()
+
+                        self._append_meta(
+                            f"{intervention['god']} intervenes upon {intervention['target']}."
+                        )
+
+                    except Exception as exc:
+                        self._append_meta(f"Intervention failed: {exc}")
+
+                    # IMPORTANT: Do NOT store JSON in chat history
+                    return
+
+                # Normal assistant response
                 if not bot_text:
                     bot_text = "(No response)"
+
                 self.msg_history.append({"role": "assistant", "content": bot_text})
-                self._stream_buffer = []
             else:
                 self._set_status("Thinking…")
                 r = requests.post(f"{BACKEND_URL}/chat", json=payload, timeout=300)

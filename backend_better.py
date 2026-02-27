@@ -25,10 +25,11 @@ import asyncio
 from projects.Bank import Account
 from projects.Functionlogger import my_logger
 from projects.WarRuntime import WarRuntime
+from projects.BrahmaObserver import BrahmaObserver
 
 app = FastAPI(title="Better Backend using codex", version = "1.0")
 
-DEFAULT_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:7b-instruct")  # change to qwen2.5:72b, mistral-nemo:12b, etc.
+DEFAULT_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:3b-instruct")  # change to qwen2.5:72b, mistral-nemo:12b, etc.
 war_runtime = WarRuntime()
 
 # ---- Local storage config ----
@@ -46,6 +47,9 @@ MAX_LOG_CHARS = 80000
 _accounts: Dict[int, Account] = {}
 ACCOUNTS_DIR = Path.cwd() / "bank_accounts"
 ACCOUNTS_DIR.mkdir(parents=True, exist_ok=True)
+
+ALLOWED_GODS = {"Shiva", "Brahma", "Vishnu"}
+ALLOWED_EFFECTS = {"heal", "decay"}
 
 
 class KV(BaseModel):
@@ -107,9 +111,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.on_event("startup")
-def _start_war_runtime():
-    war_runtime.start()
+
 
 def _timezone_name() -> str | None:
     # Primary: from aware datetime
@@ -255,7 +257,37 @@ def build_context_system_msg() -> dict :
     }
 
 def _final_messages(req: ChatRequest) -> list[dict]:
-    return [build_context_system_msg()] + [m.model_dump() for m in req.messages]
+    messages: list[dict] = []
+
+    # Base system context (always present)
+    messages.append(build_context_system_msg())
+
+    # Inject war state if running
+    if war_runtime.running and war_runtime.brahma:
+        brahma_context = war_runtime.brahma.build_llm_context()
+
+        messages.append({
+            "role": "system",
+            "content": (
+                "You are observing a live war simulation.\n\n"
+                "Authoritative State Snapshot:\n"
+                f"{json.dumps(brahma_context['state'], indent=2)}\n\n"
+                "Recent Structured Events:\n"
+                f"{json.dumps(brahma_context['recent_events'], indent=2)}\n\n"
+                "Brahma Analysis (every 10 turns):\n"
+                f"{json.dumps(brahma_context['analysis'], indent=2)}\n\n"
+                "You must ONLY reason from this data.\n"
+                "Do not invent numbers. Do not assume hidden state."
+            )
+        })
+    # Conversation
+    if war_runtime.running:
+        # Only include latest user message (grounded mode)
+        last_user = req.messages[-1]
+        messages.append(last_user.model_dump())
+    else:
+        messages.extend(m.model_dump() for m in req.messages)
+    return messages
 
 def _account_path(number: int) -> Path:
     return ACCOUNTS_DIR / f"{number}.json"
@@ -279,6 +311,140 @@ def _load_accounts_from_disk() -> None:
             _accounts[account.number] = account
         except (OSError, json.JSONDecodeError, KeyError, ValueError):
             continue
+
+def _try_handle_war_command(text: str) -> bool:
+    """
+    Full command handling pipeline.
+    Returns True if a command was executed.
+    """
+    cmd = extract_command(text)
+    if not cmd:
+        return False
+
+    if not validate_war_command(cmd):
+        _log_append({
+            "ts": _local_time_iso(),
+            "event": "war_command_rejected",
+            "level": "WARN",
+            "reason": "validation_failed",
+            "command": cmd,
+        })
+        return False
+
+    executed = dispatch_command(cmd)
+
+    if executed:
+        _log_append({
+            "ts": _local_time_iso(),
+            "event": "war_command_executed",
+            "level": "INFO",
+            "command": cmd,
+        })
+
+    return executed
+
+def handle_war_intervention(cmd: dict) -> bool:
+    war_runtime.command_queue.put({
+        "god": cmd["god"],
+        "effect": cmd["effect"],
+        "target": cmd["target"],
+        "magnitude": float(cmd.get("magnitude", 0.3)),
+    })
+
+    war_runtime._log(
+        f"{cmd['god']} intervenes: "
+        f"{cmd['effect']} → {cmd['target']} "
+        f"(magnitude={cmd.get('magnitude', 0.3)})"
+    )
+
+    return True
+
+def extract_command(text: str) -> dict | None:
+    """
+    Extract a structured command from model output.
+    - NO execution
+    - NO runtime knowledge
+    """
+    text = text.strip()
+
+    # Hard rule: command must be pure JSON
+    if not (text.startswith("{") and text.endswith("}")):
+        return None
+
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+
+    if not isinstance(data, dict):
+        return None
+
+    if "type" not in data:
+        return None
+
+    return data
+
+def validate_war_command(cmd: dict) -> bool:
+    """
+    Validate war command semantics + runtime state.
+    NO execution.
+    """
+    if cmd.get("type") != "war_intervention":
+        return False
+
+    if not war_runtime.running:
+        return False
+
+    god = cmd.get("god")
+    effect = cmd.get("effect")
+    target = cmd.get("target")
+
+    if god not in ALLOWED_GODS:
+        return False
+
+    if effect not in ALLOWED_EFFECTS:
+        return False
+
+    if not isinstance(target, str) or not target:
+        return False
+
+    try:
+        magnitude = float(cmd.get("magnitude", 0.3))
+    except (TypeError, ValueError):
+        return False
+
+    if not (0.0 < magnitude <= 1.0):
+        return False
+
+    return True
+
+def dispatch_command(cmd: dict) -> bool:
+    """
+    Route validated commands to handlers.
+    This is the ONLY place execution is allowed.
+    """
+    cmd_type = cmd["type"]
+
+    if cmd_type == "war_intervention":
+        return handle_war_intervention(cmd)
+
+    return False
+
+def _is_resume_intent(text: str) -> bool:
+    t = text.lower()
+    return any(
+        phrase in t
+        for phrase in (
+            "continue",
+            "resume",
+            "go ahead",
+            "next turn",
+            "advance",
+            "let it continue",
+            "resume the war",
+        )
+    )
+
 
 @my_logger
 def _create_account(name: str, number: int, amount: float) -> Account:
@@ -389,11 +555,40 @@ _load_accounts_from_disk()
 
 @app.post("/chat")
 async def chat_once(req: ChatRequest):
+    # 0️⃣ HARD INTERCEPT: war control commands (NO LLM)
+    last_user_message = (
+        req.messages[-1].content.strip().lower()
+        if req.messages else ""
+    )
+
+    if _is_resume_intent(last_user_message):
+        if war_runtime.running:
+            war_runtime.turn_gate.set()
+            _log_append({
+                "ts": _local_time_iso(),
+                "event": "war_continue",
+                "level": "INFO",
+            })
+            return JSONResponse({
+                "message": {
+                    "role": "system",
+                    "content": "⚔️ The war advances to the next turn."
+                }
+            })
+        else:
+            return JSONResponse({
+                "message": {
+                    "role": "system",
+                    "content": "No war is currently running."
+                }
+            })
+
+    # --- existing code below remains unchanged ---
+
     model = req.model or DEFAULT_MODEL
     opts = req.options or {}
-    prompt_text = _truncate (_last_user_prompt(req.messages))
+    prompt_text = _truncate(_last_user_prompt(req.messages))
 
-    #log incoming prompt
     _log_append({
         "ts": _local_time_iso(),
         "event": "chat_request",
@@ -401,32 +596,51 @@ async def chat_once(req: ChatRequest):
         "model": model,
         "temp": req.temperature,
         "count_msgs": len(req.messages),
-        "prompt" : prompt_text,
+        "prompt": prompt_text,
     })
+
     try:
         resp = ollama.chat(
             model=model,
             messages=_final_messages(req),
             keep_alive=req.keep_alive,
-            options={"temperature": req.temperature, **opts} if req.temperature is not None else opts,
+            options={"temperature": req.temperature, **opts}
+            if req.temperature is not None else opts,
             stream=False,
         )
 
-        response_text  = _truncate((resp.get("message", {}) or {}).get("content", "") or "" )
-        # —— log the response summary
         msg = resp.get("message", {}) or {}
+        raw_text = msg.get("content", "") or ""
+        response_text = _truncate(raw_text)
+
+        # war intervention JSON (this stays exactly as-is)
+        if _try_handle_war_command(raw_text):
+            _log_append({
+                "ts": _local_time_iso(),
+                "event": "war_intervention",
+                "level": "INFO",
+                "model": model,
+                "response": raw_text,
+            })
+
+            return JSONResponse({
+                "message": {
+                    "role": "assistant",
+                    "content": "Divine intervention executed."
+                }
+            })
+
         _log_append({
             "ts": _local_time_iso(),
             "event": "chat_response",
             "level": "INFO",
             "model": model,
-            "chars": len(msg.get("content", "") or ""),
-            "response" : response_text,
-
+            "chars": len(raw_text),
+            "response": response_text,
         })
 
         return JSONResponse(resp)
-    
+
     except ResponseError as e:
         _log_append({
             "ts": _local_time_iso(),
@@ -437,8 +651,10 @@ async def chat_once(req: ChatRequest):
             "detail": str(e),
         })
         return JSONResponse(
-            {"error": f"Model '{model}' not found or not pulled. Run: ollama pull {model}",
-             "detail": str(e)},
+            {
+                "error": f"Model '{model}' not found or not pulled.",
+                "detail": str(e)
+            },
             status_code=400,
         )
     
@@ -525,10 +741,29 @@ def war_start():
     war_runtime.start()
     return {"ok": True, "running": war_runtime.running}
 
+@app.post("/war/continue")
+def continue_war():
+    if war_runtime.running:
+        war_runtime.turn_gate.set()
+        return {"status": "war resumed"}
+    return {"error": "war not running"}
+
+@app.post("/war/pause")
+def pause_war():
+    war_runtime.turn_gate.clear()
+    return {"status": "war paused"}
+
 @app.post("/war/stop")
 def war_stop():
     war_runtime.stop()
     return {"ok": True, "running": war_runtime.running}
+
+@app.get("/war/history")
+def war_history():
+    return {
+        "running": war_runtime.running,
+        "events": war_runtime.history
+    }
 
 @app.get("/war/status")
 def war_status():
@@ -554,6 +789,22 @@ async def _stream_generator(req: ChatRequest) -> AsyncGenerator[bytes, None]:
     - No full-response buffering
     - Hard output cap to avoid runaway generations
     """
+    # HARD INTERCEPT: resume / continue (NO LLM)
+    last_user_message = _last_user_prompt(req.messages).strip().lower()
+
+    if _is_resume_intent(last_user_message):
+        if war_runtime.running:
+            war_runtime.turn_gate.set()
+            _log_append({
+                "ts": _local_time_iso(),
+                "event": "war_continue",
+                "level": "INFO",
+            })
+            yield b"\n The war advances to the next turn.\n"
+            return
+        else:
+            yield b"\nNo war is currently running.\n"
+            return
 
     loop = asyncio.get_event_loop()
     model = req.model or DEFAULT_MODEL
@@ -646,3 +897,14 @@ if __name__ == "__main__":
     # Run: uvicorn backend:app --reload --port 8000
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
+
+
+#Additions
+# type WarIntervention = {
+#   type: "war_intervention"
+#   god: "Shiva" | "Brahma" | "Vishnu"
+#   effect: "heal" | "decay"
+#   target: string
+#   magnitude: number
+#   reason?: string
+# }
